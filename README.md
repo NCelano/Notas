@@ -1,5 +1,13 @@
 # Notas
 
+## Links
+
+https://algoritmos-iii.github.io/
+
+https://github.com/TomasSzeSirk/AyP3/issues
+
+https://sites.google.com/view/cuis-university
+
 ## Recordatorios
 
 • Categorizar mensajes.
