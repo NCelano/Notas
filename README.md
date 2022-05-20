@@ -8,10 +8,21 @@
 
 ### Para los tests:
 
-• Crear mensajes que faciliten la lectura de colaboraciones que tengan un significado
+• Crear mensajes y asserts que faciliten la lectura de colaboraciones que tengan un significado
 
-  > 5 timesRepeat: [ mensaje := NPCJulian interactuarCon: jugadorPablo ]
+  > 5 timesRepeat: [ mensaje := NPCJulian interactuarCon: jugadorPablo ] ^mensaje
  
   Se ve mucho peor que poner
   
   > hacerInteractuar: 5 vecesA: NPCJulian con: jugadorPablo
+
+  y utilizar la primer colaboración como método de este ultimo mensaje
+
+  Luego se podría crear un mensaje de assert que utilice este mensaje para verificar si la interacción es la correcta.
+  
+ • Para verificar que un Error sea el esperado se hace lo siguiente:
+ 
+ > self 
+		should: [ one / zero ]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: Numero canNotDivideByZeroErrorDescription equals: anError messageText ]
