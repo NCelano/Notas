@@ -25,6 +25,18 @@ https://sites.google.com/view/cuis-university
    5. Reemplazar el if por el envío del mensaje polimórfico.
    6. Buscar el objeto polimórfico (si es necesario)
 
+## Switch dinámico
+
+Es un mensaje de clase que se usa solo cuando no se sabe qué clase instanciar, luce de la siguiente manera:
+
+> ^(self subclasses detect: [:subclass| subclass detectIfSubclassFitsRequirements: anObject ]) new.
+
+También se puede asignar la subclase obtenida a una variable temporal, instanciarla y luego devolverla.
+
+El detector dentro del closure es un mensaje polimorfico. Cada subclase devolverá true o false según cómo responde al objeto enviado.
+
+*por ejemplo en el ejercicio de Stack, #detectIfItIsTheCorrectState: de OOLleno devolverá true si el stack está lleno, por lo que si esto se cumple el detect devolverá la subclase OOLLeno y posteriormente se podrá crear la instancia.
+
 ## Sobre el Parcial 2C2021
 
 ### Para el modelo:
