@@ -35,7 +35,7 @@ También se puede asignar la subclase obtenida a una variable temporal, instanci
 
 El detector dentro del closure es un mensaje polimorfico. Cada subclase devolverá true o false según cómo responde al objeto enviado.
 
-*por ejemplo en el ejercicio de Stack, #detectIfItIsTheCorrectState: de OOLleno devolverá true si el stack está lleno, por lo que si esto se cumple el detect devolverá la subclase OOLLeno y posteriormente se podrá crear la instancia.
+*por ejemplo en el ejercicio de Stack, #detectIfItIsTheCorrectState: de OOLleno devolverá true si el stack está lleno, por lo que si esto se cumple el detect devolverá la subclase OOLLeno y posteriormente se podrá crear la instancia.*
 
 ## Sobre el Parcial 2C2021
 
