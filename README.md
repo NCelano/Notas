@@ -6,6 +6,17 @@
 
 • implementar mensajes abstractos con "self subclassResponsibility".
 
+• Hacer explícitos los conceptos dentro del código para eliminar código repetido.
+
+## Sacar Ifs
+
+   1. Crear una jerarquía de clases con una clase por cada condición del if (si es que no existen).
+   2. Mover el cuerpo del if de cada condición a cada abstracción del paso 1) utilizando un mensaje polimórfico.
+   3. Nombrar el mensaje polimórfico.
+   4. Nombrar las abstracciones generadas en el paso 1.
+   5. Reemplazar el if por el envío del mensaje polimórfico.
+   6. Buscar el objeto polimórfico (si es necesario)
+
 ## Sobre el Parcial 2C2021
 
 ### Para el modelo:
