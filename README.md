@@ -6,6 +6,8 @@
 
 • Si un NPC puede tener estados/roles, el estado es una clase a parte (con subclases que representen cada uno).
 
+• Si queremos representar algo que no hace nada en nuestro modelo (porque lo queremos usar en nuestros tests, por ejemplo) podemos usar simbolos
+
 ### Para los tests:
 
 • Crear mensajes y asserts que faciliten la lectura de colaboraciones que tengan un significado
